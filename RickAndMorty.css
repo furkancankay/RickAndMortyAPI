@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  body {
+    width: auto;
+    height: 100vh;
+    background-image: url("https://w0.peakpx.com/wallpaper/150/369/HD-wallpaper-rick-and-morty-oled-adult-swim.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 142%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+  body {
+    width: auto;
+    height: 100vh;
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Rick-And-Morty-HD-Wallpapers-Free-download.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 1251px) {
+  body {
+    width: auto;
+    height: 100vh;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghhSkTY_m0ra4dnO1eV7HT88Pt5S4jOGdckFpIqT5uT68_DJzGVqPrkha_sR6lV1_KiWEvTV9DgxJM-23ht9X9-ZihM7A1lkcHAAmw_kZu8x1_3CmvqmUnKvy3vIaK4DgY0Axtt5NW6khFnlvyVVwuVNu4x3AXdts029POd3WeBQJAQw2JDMB8Exh4/d/RICK%20AND%20MORTY%204K%20WALLPAPER%20FOR%20PC.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+  }
+}
+
+#bodyBackground {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#headerImage {
+  width: 300px;
+  margin-top: -70px;
+  margin-bottom: -60px;
+}
+
+/* ====================================== Yapı ====================================== */
+
+.container-spacebetween {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container-spacearound {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#mainSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbuttons {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 150px;
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+#allButton {
+  color: #f0e14a;
+  background-color: #f0e24a50;
+  box-shadow: #f0e14a 0 0 10px;
+}
+
+#allButton:hover {
+  color: #000000;
+  background-color: #f0e24a;
+}
+#aliveButton {
+  color: #97ce4c;
+  background-color: #98ce4c48;
+  box-shadow: #97ce4c 0 0 10px;
+}
+#aliveButton:hover {
+  color: #000000;
+  background-color: #97ce4c;
+}
+#deadButton {
+  color: darkred;
+  background-color: rgba(139, 0, 0, 0.3);
+  box-shadow: darkred 0 0 10px;
+}
+#deadButton:hover {
+  color: #000000;
+  background-color: darkred;
+}
+.pageButton{
+  background-color: #e4a78844;
+  color: #44281d;
+  width: 50px;
+}
+.pageButton:hover{
+  background-color: #e4a788;
+  color: black;
+}
+/* ====================================== Icerik ====================================== */
+
+main {
+  padding: 20px 30px 0px 30px;
+  width: 80%;
+  height: 80vh;
+  max-height: 80vh;
+  overflow-y: scroll;
+  margin-left: -10vh;
+  background-color: rgba(150, 150, 150, 0);
+  border-radius: 10px;
+  box-shadow: black 0px 0px 15px;
+  color: #44281d;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*    #97ce4c green   #e89ac7   #f0e14a yellow  #e4a788    #44281d    */
+}
+
+.card{
+  border: #44281d 10px solid;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 25px 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.char-img{
+  border: #44281d 10px solid;
+  margin-top: -160px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+h2{
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: #97ce4c;
+}
+p{
+  margin-top: 20px;
+  color: #e4a788;
+}
+label{
+  color: white;
+}
+@media screen and (max-width: 1251px) and (min-width: 600px) {
+  #mainSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  button {
+    margin: 5px auto;
+  }
+  #navbuttons {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    min-width: 480px;
+  }
+  main {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #mainSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    margin: 5px auto;
+  }
+  #navbuttons {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  main{
+    padding-top: 20px;
+    margin-left: 0;
+  }
+  .card{
+    margin-top: 40px;
+  }
+}

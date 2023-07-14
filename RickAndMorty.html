@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="RickAndMorty.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />    <title>Rick And Morty</title>
+  </head>
+  <body>
+    <div id="bodyBackground">
+      <img
+        id="headerImage"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ed60fa2e-e9d9-470c-b4a0-e4febab02a56/dbf11dc-60d1d4a5-15d5-4823-a0f8-99876e1cedfd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VkNjBmYTJlLWU5ZDktNDcwYy1iNGEwLWU0ZmViYWIwMmE1NlwvZGJmMTFkYy02MGQxZDRhNS0xNWQ1LTQ4MjMtYTBmOC05OTg3NmUxY2VkZmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.A9xQJwd_RuVFpEQ3_PjXsWszecKRhiHNb1jb-mx7wQs"
+        alt=""
+      />
+      <div id="mainSection">
+
+
+
+        <div id="navbuttons">
+          <button onclick = getAll() id="allButton">Get all of them.</button>
+          <button onclick = getAlive() id="aliveButton">Who is alive?</button>
+          <button onclick = getDead() id="deadButton">You killed them Morty!</button>
+          <div class="container">
+            <button class="pageButton" onclick = prevPage()> <span class="material-icons">
+              chevron_left
+              </span> </button>
+              <label id="pageId">1</label>
+            <button class="pageButton" onclick = nextPage()> <span class="material-icons">
+              chevron_right
+              </span> </button>
+          </div>
+        </div>
+
+        <main id="characters">
+          <!-- The characters will be here... -->
+        </main>
+
+
+        
+      </div>
+    </div>
+  </body>
+  <script src="RickAndMorty.js"></script>
+</html>
