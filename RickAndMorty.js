@@ -1,6 +1,9 @@
 var link = "https://rickandmortyapi.com/api/character?page=1";
 var who = "";
 var pageNumber = 1;
+var totalPage = 42;
+
+
 function prevPage() {
   var pageId = document.getElementById("pageId");
 
@@ -30,7 +33,7 @@ function prevPage() {
 }
 function nextPage() {
   var pageId = document.getElementById("pageId");
-  if (pageNumber != 42) {
+  if (pageNumber != totalPage) {
     fetch(link, {
       method: "GET",
     })
@@ -69,6 +72,7 @@ function getCharactersData(isAlive) {
       }
     })
     .then((data) => {
+      totalPage = data.info.pages;
       if (isAlive == "all") {
         var characters = document.getElementById("characters");
         characters.innerHTML = "";
